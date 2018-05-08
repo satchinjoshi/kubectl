@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV KUBE_VERSION="v1.9.7"
+ENV KUBE_VERSION="v1.10.2"
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl \
