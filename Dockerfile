@@ -1,4 +1,4 @@
-FROM alpine/helm:3.0.0
+FROM alpine/helm:3.1.2
 
 ENV KUBE_VERSION="v1.17.3"
 
