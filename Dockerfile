@@ -1,6 +1,6 @@
 FROM alpine/helm:3.0.0
 
-ENV KUBE_VERSION="v1.15.2"
+ENV KUBE_VERSION="v1.17.3"
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl \
