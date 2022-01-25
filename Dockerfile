@@ -1,8 +1,8 @@
-FROM alpine/helm:3.1.2
+FROM alpine/helm:3.7.1
 
-ENV KUBE_VERSION="v1.17.3"
+ENV KUBE_VERSION="v1.22.4"
 
-RUN apk add --update ca-certificates \
+RUN apk add --update ca-certificates aws-cli jq \
  && apk add --update -t deps curl \
  && curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBE_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
  && chmod +x /usr/local/bin/kubectl \
